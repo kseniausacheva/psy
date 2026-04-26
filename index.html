@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анна Соколова — Психоаналитик</title>
+  <meta name="description" content="Классический психоанализ. Индивидуальные сессии онлайн и в Москве. Глубинная работа с тревогой, депрессией, отношениями." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Floating glass nav -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-mark">
+      <span class="mark-glyph">A</span>
+      <span class="mark-text">Анна Соколова</span>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">О себе</a>
+      <a href="#approach">Подход</a>
+      <a href="#topics">Темы</a>
+      <a href="#process">Сессии</a>
+      <a href="#faq">Вопросы</a>
+    </div>
+
+    <a href="#contact" class="nav-cta">
+      <span>Записаться</span>
+      <span class="nav-cta-icon" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 13L13 3M13 3H6M13 3V10"/></svg>
+      </span>
+    </a>
+
+    <button class="nav-burger" id="burger" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <ul>
+      <li><a href="#about">О себе</a></li>
+      <li><a href="#approach">Подход</a></li>
+      <li><a href="#topics">Темы</a></li>
+      <li><a href="#process">Сессии</a></li>
+      <li><a href="#faq">Вопросы</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <div class="menu-foot">
+      <p>annasokolova@psy.ru</p>
+      <p>Москва · Онлайн</p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-grid">
+
+      <div class="hero-text reveal">
+        <span class="eyebrow">Психоанализ · с 2011 года</span>
+
+        <h1 class="display">
+          <span class="line">Слово, которое</span>
+          <span class="line"><em>возвращает</em></span>
+          <span class="line">себе себя.</span>
+        </h1>
+
+        <p class="lead">
+          Глубинная аналитическая работа со взрослыми. Тревога, отношения,
+          утраты, внутренние конфликты. Пространство, в котором можно
+          говорить медленно — и услышать себя.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span>Первая встреча</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 13L13 3M13 3H6M13 3V10"/></svg>
+            </span>
+          </a>
+          <a href="#approach" class="btn btn-ghost">
+            <span>Как я работаю</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <div class="meta-num">14+</div>
+            <div class="meta-cap">лет в практике</div>
+          </div>
+          <div class="meta-divider"></div>
+          <div>
+            <div class="meta-num">600+</div>
+            <div class="meta-cap">аналитических часов в год</div>
+          </div>
+          <div class="meta-divider"></div>
+          <div>
+            <div class="meta-num">3</div>
+            <div class="meta-cap">формата работы</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- Double-bezel image card -->
+        <div class="frame">
+          <div class="frame-inner">
+            <img
+              src="https://images.unsplash.com/photo-1769050612649-d1f453b42036?auto=format&fit=crop&w=1400&q=80"
+              alt="Кресло, освещённое тёплым солнцем у окна"
+              loading="eager"
+            />
+            <div class="frame-tag">
+              <span class="dot"></span>
+              <span>Принимаю записи на май</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating quote chip -->
+        <div class="float-chip">
+          <p>«Бессознательное говорит — задача аналитика быть услышанным вместе с ним.»</p>
+          <span>— Жак Лакан</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      <span>прокрутите</span>
+      <div class="hint-line"></div>
+    </div>
+  </header>
+
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Психоанализ</span><span>·</span>
+      <span>Тревожные расстройства</span><span>·</span>
+      <span>Отношения</span><span>·</span>
+      <span>Депрессия</span><span>·</span>
+      <span>Психосоматика</span><span>·</span>
+      <span>Утрата</span><span>·</span>
+      <span>Самоидентичность</span><span>·</span>
+      <span>Психоанализ</span><span>·</span>
+      <span>Тревожные расстройства</span><span>·</span>
+      <span>Отношения</span><span>·</span>
+      <span>Депрессия</span><span>·</span>
+      <span>Психосоматика</span><span>·</span>
+      <span>Утрата</span><span>·</span>
+      <span>Самоидентичность</span><span>·</span>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container split">
+
+      <div class="split-left reveal">
+        <span class="eyebrow eyebrow-dark">01 — О себе</span>
+        <h2 class="h2">
+          Я не даю советов.
+          <em>Я слушаю</em> то, что вы ещё не сказали себе.
+        </h2>
+      </div>
+
+      <div class="split-right reveal">
+        <p class="body-lg">
+          Я работаю в традиции классического психоанализа: фрейдовского,
+          лакановского, объектных отношений. Это длительный путь — но именно
+          он позволяет встретиться с тем, что повторяется в жизни и причиняет
+          боль, не находя слов.
+        </p>
+
+        <p class="body-lg">
+          Моя задача — не помочь вам «стать лучше», а помочь услышать собственное
+          желание. Часто оно говорит шёпотом и иногда — на чужом языке.
+        </p>
+
+        <ul class="cred-list">
+          <li>
+            <span class="cred-year">2011</span>
+            <span>МГУ им. Ломоносова, факультет психологии — клиническая специализация</span>
+          </li>
+          <li>
+            <span class="cred-year">2014</span>
+            <span>Восточно-Европейский институт психоанализа (ВЕИП), Санкт-Петербург</span>
+          </li>
+          <li>
+            <span class="cred-year">2018</span>
+            <span>Стажировка в Институте Фрейда, Париж</span>
+          </li>
+          <li>
+            <span class="cred-year">наст.</span>
+            <span>Член Европейской конфедерации психоаналитической психотерапии</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- APPROACH — bento -->
+  <section class="approach" id="approach">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow-dark">02 — Подход</span>
+        <h2 class="h2">Четыре опоры моей <em>практики</em></h2>
+      </div>
+
+      <div class="bento">
+        <!-- big card -->
+        <article class="bento-card bento-a reveal">
+          <div class="frame frame-soft">
+            <div class="frame-inner frame-image">
+              <img src="https://images.unsplash.com/photo-1706486540611-3b4221f1c3ad?auto=format&fit=crop&w=1400&q=80" alt="Тени окна на стене"/>
+            </div>
+          </div>
+          <div class="bento-text">
+            <h3 class="h3">Молчание как пространство</h3>
+            <p>В психоанализе пауза не пустота. Она — место, где может появиться
+              то, что обычно перебивается рассудком. Я учусь молчать вместе с вами —
+              чтобы вы могли услышать себя.</p>
+          </div>
+        </article>
+
+        <!-- small cards -->
+        <article class="bento-card bento-b reveal">
+          <div class="bento-num">02</div>
+          <h3 class="h3">Свободные ассоциации</h3>
+          <p>Никаких «правильных» тем. Вы говорите то, что приходит — и в этом
+            движении проступает то, о чём вы не подозревали.</p>
+        </article>
+
+        <article class="bento-card bento-c reveal">
+          <div class="bento-num">03</div>
+          <h3 class="h3">Перенос</h3>
+          <p>В кабинете оживают сцены прошлого. Не для того, чтобы их пережить
+            заново — а чтобы наконец рассказать иначе.</p>
+        </article>
+
+        <article class="bento-card bento-d reveal">
+          <div class="frame frame-soft">
+            <div class="frame-inner frame-image">
+              <img src="https://images.unsplash.com/photo-1647083905013-6bfda6eb38c0?auto=format&fit=crop&w=1200&q=80" alt="Открытая книга и очки"/>
+            </div>
+          </div>
+          <div class="bento-text">
+            <h3 class="h3">Этика длительности</h3>
+            <p>Психоанализ — не быстрый ремонт. Мы договариваемся о ритме —
+              одна, две, три встречи в неделю — и держимся его столько, сколько
+              нужно вашей истории.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TOPICS -->
+  <section class="topics" id="topics">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow-dark">03 — С чем я работаю</span>
+        <h2 class="h2">Темы, которые приводят ко мне <em>чаще всего</em></h2>
+      </div>
+
+      <div class="topics-grid">
+        <div class="topic reveal" style="--d:0ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Тревога и панические состояния</h4>
+          <p>Когда тело реагирует раньше, чем мысль успевает оформиться.</p>
+        </div>
+        <div class="topic reveal" style="--d:80ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Депрессивные эпизоды</h4>
+          <p>Усталость, в которой исчезает желание — и вопрос «зачем».</p>
+        </div>
+        <div class="topic reveal" style="--d:160ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Отношения, которые повторяются</h4>
+          <p>Сценарий, который вы узнаёте — но не можете изменить изнутри.</p>
+        </div>
+        <div class="topic reveal" style="--d:240ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Утрата и горе</h4>
+          <p>Когда смерть, расставание или разрыв оставили слова без адресата.</p>
+        </div>
+        <div class="topic reveal" style="--d:320ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Психосоматика</h4>
+          <p>Симптом, на который не находится медицинского ответа.</p>
+        </div>
+        <div class="topic reveal" style="--d:400ms">
+          <span class="topic-icon">⟶</span>
+          <h4>Кризисы идентичности</h4>
+          <p>«Я больше не понимаю, кто я и чего хочу» — самая частая фраза.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow-dark">04 — Как проходит работа</span>
+        <h2 class="h2">От первой встречи <em>до анализа</em></h2>
+      </div>
+
+      <div class="process-row">
+        <div class="process-card reveal">
+          <span class="step">01</span>
+          <h3 class="h3">Письмо</h3>
+          <p>Вы пишете мне — несколько строк о том, что привело. Я отвечаю в течение суток.</p>
+          <span class="step-time">~ 5 минут</span>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="step">02</span>
+          <h3 class="h3">Установочные встречи</h3>
+          <p>3–5 предварительных сессий. Мы знакомимся, я слушаю запрос, вы — мою манеру работы.</p>
+          <span class="step-time">3–5 встреч · 50 мин</span>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="step">03</span>
+          <h3 class="h3">Контракт</h3>
+          <p>Договариваемся о ритме, формате (онлайн / кабинет / кушетка) и оплате. Без давления.</p>
+          <span class="step-time">~ 30 минут</span>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="step">04</span>
+          <h3 class="h3">Аналитическая работа</h3>
+          <p>Регулярные встречи в выбранном ритме. Длительность определяется самой работой.</p>
+          <span class="step-time">от 6 месяцев</span>
+        </div>
+      </div>
+
+
+      <!-- pricing strip -->
+      <div class="pricing reveal">
+        <div class="frame frame-dark">
+          <div class="frame-inner frame-pad">
+
+            <div class="price-grid">
+              <div class="price">
+                <span class="price-label">Установочная встреча</span>
+                <span class="price-num">5 000 ₽</span>
+                <span class="price-sub">50 мин · онлайн или Москва</span>
+              </div>
+              <div class="price-sep"></div>
+              <div class="price">
+                <span class="price-label">Регулярная сессия</span>
+                <span class="price-num">7 000 ₽</span>
+                <span class="price-sub">50 мин · 1–3 раза в неделю</span>
+              </div>
+              <div class="price-sep"></div>
+              <div class="price">
+                <span class="price-label">Кушетка</span>
+                <span class="price-num">8 000 ₽</span>
+                <span class="price-sub">50 мин · от 3 встреч в неделю</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-light">
+              <span>Записаться на встречу</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 13L13 3M13 3H6M13 3V10"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="container">
+      <blockquote class="reveal">
+        <p>
+          «За три года анализа я не стала "другим человеком". Я стала <em>той,
+          кем была всегда</em> — но больше не боюсь это признать.»
+        </p>
+        <footer>— М., 34 года, в анализе с 2022</footer>
+      </blockquote>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container split">
+
+      <div class="split-left reveal">
+        <span class="eyebrow eyebrow-dark">05 — Вопросы</span>
+        <h2 class="h2">Что обычно <em>спрашивают</em> до первой встречи</h2>
+      </div>
+
+      <div class="split-right reveal">
+        <div class="faq-list">
+
+          <details class="faq-item" open>
+            <summary>
+              <span>Чем психоанализ отличается от психотерапии?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Психотерапия чаще ориентирована на конкретный симптом и быстрый
+                результат. Психоанализ работает с самой структурой желания и
+                повторений — медленнее, глубже и без обещаний «сделать вас счастливее».</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Сколько длится анализ?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>В среднем — от полутора до нескольких лет. Длительность определяется
+                не мной, а самой работой. На любом этапе вы свободны её закончить.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Можно ли работать онлайн?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Да. Я веду онлайн-сессии в Zoom для клиентов из других городов и стран.
+                Опыт показывает, что глубина работы при этом сохраняется.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Что такое «кушетка» и зачем она нужна?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Это классический формат: вы лежите, я нахожусь вне поля зрения.
+                Это снимает социальное напряжение взгляда и позволяет ассоциациям
+                течь свободнее. Переход на кушетку — отдельный шаг, к которому
+                мы приходим вместе.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Что, если мне не подойдёт?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Установочные встречи как раз для этого. Если мы поймём, что я не
+                ваш аналитик, я бесплатно порекомендую коллег, чей подход вам ближе.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="contact-card reveal">
+        <div class="frame frame-cream">
+          <div class="frame-inner contact-inner">
+
+            <div class="contact-text">
+              <span class="eyebrow eyebrow-dark">06 — Связаться</span>
+              <h2 class="h2">Напишите — и мы<br/>назначим <em>первую встречу</em></h2>
+              <p>Я отвечаю на письма в течение 24 часов в будние дни.
+                В письме достаточно нескольких строк — что привело,
+                удобное время и формат.</p>
+
+              <div class="contact-direct">
+                <a href="mailto:annasokolova@psy.ru" class="contact-link">
+                  <span class="contact-label">Почта</span>
+                  <span class="contact-val">annasokolova@psy.ru</span>
+                </a>
+                <a href="https://t.me/annasokolova" class="contact-link">
+                  <span class="contact-label">Telegram</span>
+                  <span class="contact-val">@annasokolova</span>
+                </a>
+                <div class="contact-link">
+                  <span class="contact-label">Кабинет</span>
+                  <span class="contact-val">Москва, м. Чистые пруды</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-sent').style.opacity=1; this.reset();">
+              <label>
+                <span>Ваше имя</span>
+                <input type="text" name="name" required placeholder="Как к вам обращаться" />
+              </label>
+              <label>
+                <span>Email или Telegram</span>
+                <input type="text" name="contact" required placeholder="чтобы я могла ответить" />
+              </label>
+              <label>
+                <span>Несколько слов</span>
+                <textarea name="message" rows="4" placeholder="о том, что привело"></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Отправить</span>
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 13L13 3M13 3H6M13 3V10"/></svg>
+                </span>
+              </button>
+
+              <span class="form-sent">Спасибо — я отвечу в ближайшие 24 часа.</span>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="container foot-grid">
+
+      <div class="foot-brand">
+        <span class="mark-glyph">A</span>
+        <div>
+          <div class="foot-name">Анна Соколова</div>
+          <div class="foot-role">психоаналитик · Москва</div>
+        </div>
+      </div>
+
+      <div class="foot-cols">
+        <div>
+          <div class="foot-h">Навигация</div>
+          <a href="#about">О себе</a>
+          <a href="#approach">Подход</a>
+          <a href="#topics">Темы</a>
+          <a href="#process">Сессии</a>
+        </div>
+        <div>
+          <div class="foot-h">Контакт</div>
+          <a href="mailto:annasokolova@psy.ru">annasokolova@psy.ru</a>
+          <a href="https://t.me/annasokolova">@annasokolova</a>
+          <span>+7 (495) 000-00-00</span>
+        </div>
+        <div>
+          <div class="foot-h">Документы</div>
+          <a href="#">Договор оферты</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Этический кодекс</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="container foot-bot">
+      <span>© 2026 Анна Соколова</span>
+      <span class="foot-attr">
+        Фото:
+        <a href="https://unsplash.com/@aizerd" target="_blank" rel="noopener">X F</a>,
+        <a href="https://unsplash.com/@devon_mac" target="_blank" rel="noopener">Devon MacKay</a>,
+        <a href="https://unsplash.com/@romanovandrew" target="_blank" rel="noopener">Andrew Romanov</a>
+        / <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+      </span>
+      <span>Сделано с вниманием к деталям</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
